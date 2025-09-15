@@ -3,16 +3,18 @@
 
 #include <string>
 
-void addReading(const std::string& label, double value,
-                std::string labels[], double values[],
-                int& size, int capacity);
+using std::string;
+
+void addReading(const string& label, double value, string labels[], double values[], int& size, int capacity);
 
 void updateValue(double* valuePtr, double newValue);
 
-void printReading(const std::string& label, const double& value);
+void printReading(const string& label, const double& value);
 
 double average(const double values[], int size);
-double minValue(const double values[], int size);
+
+double minValue(const double vaules[], int size);
+
 double maxValue(const double values[], int size);
 
-#endif // LOGGER_H
+#endif
